@@ -3,7 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "dab9b3b95c17a8de81877d1764f2ffe1",
+  "404.html": "0a27a4163254fc8fce870c8cc3a3f94f",
+"assets/AssetManifest.json": "dab9b3b95c17a8de81877d1764f2ffe1",
 "assets/assets/Contact.png": "291acdc8f8fbc0361c94eed86a6c3cfc",
 "assets/assets/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
 "assets/assets/Cover.png": "50dd8cce40b483873f138300101c7f45",
@@ -37,9 +38,9 @@ const RESOURCES = {
 "favicon.png": "a5ac436ee1e4ed54b860dda36b33c379",
 "icons/Icon-192.png": "e7de83d57e25a501f2ee61490667348b",
 "icons/Icon-512.png": "7d0dc2f35b0f26937cfe671b54d9d310",
-"index.html": "c3986533267dc5aaffad896385c93d40",
-"/": "c3986533267dc5aaffad896385c93d40",
-"main.dart.js": "6c35b5537916c291a9b1d5f5b4ed43df",
+"index.html": "a99b457fa4f83d667bb9983ada6d59c8",
+"/": "a99b457fa4f83d667bb9983ada6d59c8",
+"main.dart.js": "1e9840d19eb184147cdc1c9a611f32ce",
 "manifest.json": "d9e418a30d1b069572d5ad81b156c92f"
 };
 
