@@ -4,11 +4,16 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "404.html": "0a27a4163254fc8fce870c8cc3a3f94f",
-"assets/AssetManifest.json": "dab9b3b95c17a8de81877d1764f2ffe1",
+"assets/AssetManifest.json": "aea024bbd5279e21fd54dd52c207997b",
+"assets/assets/2nd.jpg": "645214d39511dc12c7b3c1115ae2db2f",
+"assets/assets/3rd.jpg": "f7e2d23761485bb326f15f0206d873ad",
+"assets/assets/4th.jpg": "b3f478df746fec113312496b0d128791",
 "assets/assets/Contact.png": "291acdc8f8fbc0361c94eed86a6c3cfc",
 "assets/assets/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
 "assets/assets/Cover.png": "50dd8cce40b483873f138300101c7f45",
 "assets/assets/Disinfect.png": "6257f47db2e89ff19738fa94773dda5d",
+"assets/assets/example.gif": "88fb9f52522f6681da89df4d97765e6d",
+"assets/assets/first.jpg": "53bd729d1331856b52d47045212ec071",
 "assets/assets/Mask.png": "431cdb9264b8df48c96b4099af7ecb1b",
 "assets/assets/Prevention.png": "4971b0123d6291088abbf1198a29e59f",
 "assets/assets/Touch.png": "047cb461ab0d16a7790a55d33cf99ac6",
@@ -38,9 +43,9 @@ const RESOURCES = {
 "favicon.png": "a5ac436ee1e4ed54b860dda36b33c379",
 "icons/Icon-192.png": "e7de83d57e25a501f2ee61490667348b",
 "icons/Icon-512.png": "7d0dc2f35b0f26937cfe671b54d9d310",
-"index.html": "64dc371b9e338d8a558d3abba823cfce",
-"/": "64dc371b9e338d8a558d3abba823cfce",
-"main.dart.js": "569841f7ab8f3f164a10a2488bf46d3d",
+"index.html": "5675d7dfc497ec940b9ed217d0c1f07b",
+"/": "5675d7dfc497ec940b9ed217d0c1f07b",
+"main.dart.js": "262082cbed334def4a4c00c5355e2832",
 "manifest.json": "d9e418a30d1b069572d5ad81b156c92f"
 };
 
