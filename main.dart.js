@@ -32469,13 +32469,12 @@ B.lB.prototype={
 aj:function(){var s=t.DO
 return new B.Hx(H.a([],s),D.amM(null),H.a([],s),H.a([],s),H.a([],s),H.a(["Countries","States"],t.i),C.k)}}
 B.Hx.prototype={
-rX:function(){var s=0,r=P.aj(t.H),q=this,p,o,n,m,l,k,j
+rX:function(){var s=0,r=P.aj(t.H),q=this,p,o,n,m,l,k
 var $async$rX=P.af(function(a,b){if(a===1)return P.ag(b,r)
 while(true)switch(s){case 0:m=t.DO
 l=H.a([],m)
 k=H.a([],m)
-j=t.nU
-q.r=P.R(q.d,!0,j)
+q.r=P.R(q.d,!0,t.nU)
 q.x=H.a([],m)
 s=2
 return P.ac(G.aaS("https://disease.sh/v3/covid-19/jhucsse"),$async$rX)
@@ -32483,8 +32482,6 @@ case 2:p=b
 o=C.b2.qS(0,B.aaR(U.aas(p.e).c.a.h(0,"charset")).dZ(0,p.x),null)
 for(m=J.ad(o),n=0;n<m.gk(o);++n)if(J.aa(m.h(o,n),"province")==null)l.push(Q.U1(new B.a1x(q,o,n),null,L.an(J.aa(m.h(o,n),"country"),null,null,null,B.X(null,null,null),null),null))
 else k.push(Q.U1(new B.a1y(q,o,n),null,L.an(J.aa(m.h(o,n),"province"),null,null,null,B.X(null,null,null),null),L.an(J.b2(J.aa(m.h(o,n),"country")).toUpperCase(),null,null,null,B.X(null,null,null),null)))
-q.r=P.R(l,!0,j)
-q.x=P.R(k,!0,j)
 q.at(new B.a1z(q,l,k))
 return P.ah(null,r)}})
 return P.ai($async$rX,r)},
@@ -32502,10 +32499,15 @@ q=J.aa(p.h(r,q),"province")
 K.oD(s).oq(0,[o,q])},
 $S:0}
 B.a1z.prototype={
-$0:function(){var s=this.a
-s.z=!1
-s.d=this.b
-s.f=this.c},
+$0:function(){var s,r,q,p=this.a
+p.z=!1
+s=this.b
+p.d=s
+r=this.c
+p.f=r
+q=t.nU
+p.r=P.R(s,!0,q)
+p.x=P.R(r,!0,q)},
 $S:0}
 B.a1v.prototype={
 $2:function(a,b){var s=null,r=t.t,q=E.adZ(C.p1,H.a([E.G8(L.an("Countries",s,s,s,B.X(s,s,A.az(s,s,s,s,s,s,s,s,s,s,s,20,s,C.M,s,s,!0,s,s,s,s,s,s)),s),s),E.G8(L.an("States",s,s,s,B.X(s,s,A.az(s,s,s,s,s,s,s,s,s,s,s,20,s,C.M,s,s,!0,s,s,s,s,s,s)),s),s)],r)),p=K.Ok(new P.bh(20,20)),o=T.cv(L.fl(C.jY,C.j,100),3),n=this.a,m=B.X(s,s,A.az(s,s,C.j,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s)),l=T.fe(new T.at(C.yV,L.fl(C.jY,new P.r(4291086028),s),s),s,s),k=C.t3.h(0,900),j=K.nv(11)
