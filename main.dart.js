@@ -31871,8 +31871,8 @@ a7=a6.h("aC.E")
 a8=t.KD
 a5=H.a([c,a1,Q.lJ(a9,2,Q.kZ(a9,P.T(new H.a2(a4,new F.a18(),a6),!0,a7),a9,a9,a9,a9,!0,a9),a9,a4,a9,a9,e,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,a5)],a8)
 e=O.fi(a9,new F.a19(b2),a9,15,15,45,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-c=b2.cx
-c=c===0?1/0:(c-b2.fr)*2/10
+c=b2.cx*1.1-b2.fr/1.1
+c=c===0?1/0:c/10
 k=L.pf(new T.az(C.jt,V.Sm(Q.tr(a9,a9,a9,h,a9,a9,j,a5,a9,13,f*1.1,0,g/1.1,a9,a9,O.B1(e,O.fi(a9,new F.a1a(),c,20,15,a9,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ci(0,2,0)),a9),!k)
 c=b2.Q
 c=L.pf(new T.az(C.xI,L.ag(b0,a9,a9,B.X(a9,a9,A.ax(a9,a9,C.dj,a9,a9,a9,a9,a9,a9,a9,a9,20,a9,C.J,a9,a9,!0,a9,a9,a9,a9,a9,a9)),C.aZ),a9),c)
@@ -31886,8 +31886,8 @@ h=b2.k1
 a1=Q.ln(a9,a9,!1)
 h=H.a([Q.lJ(a9,2,Q.kZ(a9,P.T(new H.a2(d,new F.a1b(),b),!0,a),a9,a9,a9,a9,!0,a9),a9,d,a9,a9,a1,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,h)],a8)
 a1=O.fi(a9,new F.a1c(b2),a9,15,15,45,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-d=b2.cx
-d=d===0?1/0:(d-b2.dx)*2/10
+d=b2.cx*1.1-b2.dx/1.1
+d=d===0?1/0:d/10
 e=L.pf(new T.az(C.jt,V.Sm(Q.tr(a9,a9,a9,f,a9,a9,g,h,a9,13,j*1.1,0,a5/1.1,a9,a9,O.B1(a1,O.fi(a9,new F.a1d(),d,20,15,a9,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ci(0,2,0)),a9),e)
 d=b2.Q
 d=L.pf(L.ag(b1,a9,a9,B.X(20,C.J,A.ax(a9,a9,C.aS,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),C.aZ),d)
@@ -31901,8 +31901,8 @@ f=b2.k3
 b=Q.ln(a9,a9,!1)
 f=H.a([Q.lJ(a9,2,Q.kZ(a9,P.T(new H.a2(a0,new F.a1e(),a2),!0,a3),a9,a9,a9,a9,!0,a9),a9,a0,a9,a9,b,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,f)],a8)
 b=O.fi(a9,new F.a11(b2),a9,15,15,45,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-a=b2.cy
-a=a===0?1/0:(a-b2.dy)*2/10
+a=b2.cy*1.1-b2.dy/1.1
+a=a===0?1/0:a/10
 a1=L.pf(new T.az(C.jt,V.Sm(Q.tr(a9,a9,a9,j,a9,a9,a5,f,a9,13,g*1.1,0,h/1.1,a9,a9,O.B1(b,O.fi(a9,new F.a12(),a,20,15,a9,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ci(0,2,0)),a9),a1)
 a=b2.Q
 a=L.pf(L.ag("Deaths",a9,a9,B.X(a9,a9,A.ax(a9,a9,C.cd,a9,a9,a9,a9,a9,a9,a9,a9,20,a9,C.J,a9,a9,!0,a9,a9,a9,a9,a9,a9)),C.aZ),a)
@@ -31916,8 +31916,8 @@ j=b2.k2
 a0=Q.ln(a9,a9,!1)
 a8=H.a([Q.lJ(a9,2,Q.kZ(a9,P.T(new H.a2(a4,new F.a13(),a6),!0,a7),a9,a9,a9,a9,!0,a9),a9,a4,a9,a9,a0,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,j)],a8)
 j=O.fi(a9,new F.a14(b2),a9,15,15,45,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-a0=b2.db
-a0=a0===0?1/0:(a0-b2.fr)*2/10
+a0=b2.db*1.1-b2.fr/1.1
+a0=a0===0?1/0:a0/10
 b=V.eZ(new T.az(C.xR,T.d6(H.a([new T.az(C.as,n,a9),new T.az(C.xP,m,a9),new T.az(C.xJ,l,a9),k,c,e,d,a1,a,L.pf(new T.az(C.jt,V.Sm(Q.tr(a9,a9,a9,g,a9,a9,h,a8,a9,13,a5*1.1,0,f/1.1,a9,a9,O.B1(j,O.fi(a9,new F.a15(),a0,20,15,a9,!0,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ci(0,2,0)),a9),b)],s),C.ae,C.R),a9),5,new V.aq(5,30,5,30))
 a0=L.ag("Country Data: "+H.b(b2.e),a9,a9,B.X(a9,a9,A.ax(a9,a9,C.r0,a9,a9,a9,a9,a9,a9,a9,a9,25,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)
 j=L.ag("for 5 Days",a9,a9,B.X(a9,a9,A.ax(a9,a9,C.x,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)
