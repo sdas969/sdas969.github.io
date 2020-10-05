@@ -32471,18 +32471,16 @@ return new B.Hx(H.a([],s),D.amM(null),H.a([],s),H.a([],s),H.a([],s),H.a(["Countr
 B.Hx.prototype={
 rX:function(){var s=0,r=P.aj(t.H),q=this,p,o,n,m,l,k
 var $async$rX=P.af(function(a,b){if(a===1)return P.ag(b,r)
-while(true)switch(s){case 0:m=t.DO
-l=H.a([],m)
-k=H.a([],m)
-q.r=P.R(q.d,!0,t.nU)
-q.x=H.a([],m)
+while(true)switch(s){case 0:o=t.DO
+n=H.a([],o)
+m=H.a([],o)
 s=2
 return P.ac(G.aaS("https://disease.sh/v3/covid-19/jhucsse"),$async$rX)
-case 2:p=b
-o=C.b2.qS(0,B.aaR(U.aas(p.e).c.a.h(0,"charset")).dZ(0,p.x),null)
-for(m=J.ad(o),n=0;n<m.gk(o);++n)if(J.aa(m.h(o,n),"province")==null)l.push(Q.U1(new B.a1x(q,o,n),null,L.an(J.aa(m.h(o,n),"country"),null,null,null,B.X(null,null,null),null),null))
-else k.push(Q.U1(new B.a1y(q,o,n),null,L.an(J.aa(m.h(o,n),"province"),null,null,null,B.X(null,null,null),null),L.an(J.b2(J.aa(m.h(o,n),"country")).toUpperCase(),null,null,null,B.X(null,null,null),null)))
-q.at(new B.a1z(q,l,k))
+case 2:l=b
+k=C.b2.qS(0,B.aaR(U.aas(l.e).c.a.h(0,"charset")).dZ(0,l.x),null)
+for(o=J.ad(k),p=0;p<o.gk(k);++p)if(J.aa(o.h(k,p),"province")==null)n.push(Q.U1(new B.a1x(q,k,p),null,L.an(J.aa(o.h(k,p),"country"),null,null,null,B.X(null,null,null),null),null))
+else m.push(Q.U1(new B.a1y(q,k,p),null,L.an(J.aa(o.h(k,p),"province"),null,null,null,B.X(null,null,null),null),L.an(J.b2(J.aa(o.h(k,p),"country")).toUpperCase(),null,null,null,B.X(null,null,null),null)))
+q.at(new B.a1z(q,n,m))
 return P.ah(null,r)}})
 return P.ai($async$rX,r)},
 aB:function(){this.b3()
