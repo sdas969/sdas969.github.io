@@ -39,9 +39,9 @@ const RESOURCES = {
 "icons/Icon-192.png": "e7de83d57e25a501f2ee61490667348b",
 "icons/Icon-512.png": "7d0dc2f35b0f26937cfe671b54d9d310",
 "img/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
-"index.html": "d44def4607b3e6bae71bae364766ab05",
-"/": "d44def4607b3e6bae71bae364766ab05",
-"main.dart.js": "ad568b9c0b11f833503b0e95999da3f5",
+"index.html": "91fdb267a8c3aa185f4a403dbe1142fd",
+"/": "91fdb267a8c3aa185f4a403dbe1142fd",
+"main.dart.js": "861ecf2749c058d3944dc2f762cb952d",
 "manifest.json": "d9e418a30d1b069572d5ad81b156c92f",
 "styles.css": "25fded732448e22649eb956c91a916ff"
 };
