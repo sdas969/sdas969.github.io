@@ -32974,8 +32974,8 @@ k=b2.ch
 j=O.Cl(a9,a9,a9,a9,a9,a9,a9,!1,a9)
 i=new Y.c8(b2.Q?P.ax(51,255,255,255):P.ax(51,0,0,0),0.2,C.F)
 h=Y.Ch(new F.bQ(i,i,i,i),!0)
-g=b2.go
-f=b2.dx
+g=Math.floor(b2.go/1.1)
+f=Math.ceil(b2.dx*1.1)
 e=Q.lR(a9,a9,!1)
 d=b2.id
 c=b2.k4
@@ -32996,54 +32996,50 @@ a7=a6.i("aG.E")
 a8=t.KD
 a5=H.a([c,a1,Q.me(a9,2,Q.ls(a9,P.S(new H.ae(a4,new F.a3x(),a6),!0,a7),a9,a9,a9,a9,!0,a9),a9,a4,a9,a9,e,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,a5)],a8)
 e=O.fE(a9,new F.a3y(b2),a9,15,15,45,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-c=b2.dx*1.1-b2.go/1.1
-c=c===0?1/0:c/10
-k=L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,h,a9,a9,j,a5,a9,13,f*1.1,0,g/1.1,a9,a9,O.Cp(e,O.fE(a9,new F.a3z(),c,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),!k)
+c=Math.floor(b2.dx*1.1)-Math.floor(b2.go/1.1)===0?1/0:Math.ceil((Math.floor(b2.dx*1.1)-Math.floor(b2.go/1.1))/10)
+k=L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,h,a9,a9,j,a5,a9,13,f,0,g,a9,a9,O.Cp(e,O.fE(a9,new F.a3z(),c,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),!k)
 j=b2.ch
 j=L.n1(new T.av(C.zQ,L.ao(b0,a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,C.dA,a9,a9,a9,a9,a9,a9,a9,a9,20,a9,C.M,a9,a9,!0,a9,a9,a9,a9,a9,a9)),C.aD),a9),j)
 h=b2.ch
 g=O.Cl(a9,a9,a9,a9,a9,a9,a9,!1,a9)
 i=new Y.c8(b2.Q?P.ax(51,255,255,255):C.u,0.2,C.F)
 f=Y.Ch(new F.bQ(i,i,i,i),!0)
-e=b2.fx
-c=b2.dx
+e=Math.floor(b2.fx/1.1)
+c=Math.ceil(b2.dx*1.1)
 a1=b2.k4
 a5=Q.lR(a9,a9,!1)
 a1=H.a([Q.me(a9,2,Q.ls(a9,P.S(new H.ae(d,new F.a3A(),b),!0,a),a9,a9,a9,a9,!0,a9),a9,d,a9,a9,a5,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,a1)],a8)
 d=O.fE(a9,new F.a3B(b2),a9,15,15,45,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-b=b2.dx*1.1-b2.fx/1.1
-b=b===0?1/0:b/10
-h=L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,f,a9,a9,g,a1,a9,13,c*1.1,0,e/1.1,a9,a9,O.Cp(d,O.fE(a9,new F.a3C(),b,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),h)
+b=Math.floor(b2.dx*1.1)-Math.floor(b2.fx/1.1)===0?1/0:Math.ceil((Math.floor(b2.dx*1.1)-Math.floor(b2.fx/1.1))/10)
+h=L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,f,a9,a9,g,a1,a9,13,c,0,e,a9,a9,O.Cp(d,O.fE(a9,new F.a3C(),b,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),h)
 g=b2.ch
 g=L.n1(L.ao(b1,a9,a9,a9,B.Y(a9,20,C.M,A.aA(a9,a9,C.aZ,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),C.aD),g)
 f=b2.ch
 e=O.Cl(a9,a9,a9,a9,a9,a9,a9,!1,a9)
 i=new Y.c8(b2.Q?P.ax(51,255,255,255):P.ax(51,0,0,0),0.2,C.F)
 d=Y.Ch(new F.bQ(i,i,i,i),!0)
-c=b2.fy
-b=b2.dy
+c=Math.floor(b2.fy/1.1)
+b=Math.ceil(b2.dy*1.1)
 a=b2.r2
 a1=Q.lR(a9,a9,!1)
 a=H.a([Q.me(a9,2,Q.ls(a9,P.S(new H.ae(a0,new F.a3o(),a2),!0,a3),a9,a9,a9,a9,!0,a9),a9,a0,a9,a9,a1,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,a)],a8)
 a0=O.fE(a9,new F.a3p(b2),a9,15,15,45,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-a1=b2.dy*1.1-b2.fy/1.1
-a1=a1===0?1/0:a1/10
-f=L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,d,a9,a9,e,a,a9,13,b*1.1,0,c/1.1,a9,a9,O.Cp(a0,O.fE(a9,new F.a3q(),a1,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),f)
+a1=Math.floor(b2.dy*1.1)-Math.floor(b2.fy/1.1)===0?1/0:Math.ceil((Math.floor(b2.dy*1.1)-Math.floor(b2.fy/1.1))/10)
+f=L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,d,a9,a9,e,a,a9,13,b,0,c,a9,a9,O.Cp(a0,O.fE(a9,new F.a3q(),a1,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),f)
 e=b2.ch
 e=L.n1(L.ao("Deaths",a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,C.cu,a9,a9,a9,a9,a9,a9,a9,a9,20,a9,C.M,a9,a9,!0,a9,a9,a9,a9,a9,a9)),C.aD),e)
 d=b2.ch
 c=O.Cl(a9,a9,a9,a9,a9,a9,a9,!1,a9)
 i=new Y.c8(b2.Q?P.ax(51,255,255,255):P.ax(51,0,0,0),0.2,C.F)
 b=Y.Ch(new F.bQ(i,i,i,i),!0)
-a=b2.go
-a0=b2.fr
+a=Math.floor(b2.go/1.1)
+a0=Math.ceil(b2.fr*1.1)
 a1=b2.r1
 a2=Q.lR(a9,a9,!1)
 a8=H.a([Q.me(a9,2,Q.ls(a9,P.S(new H.ae(a4,new F.a3r(),a6),!0,a7),a9,a9,a9,a9,!0,a9),a9,a4,a9,a9,a2,a9,a9,!0,a9,!0,a9,a9,a9,a9,a9,a9,a1)],a8)
 a1=O.fE(a9,new F.a3s(b2),a9,15,15,45,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)))
-a2=b2.fr*1.1-b2.go/1.1
-a2=a2===0?1/0:a2/10
-n=V.ff(new T.av(C.A1,T.da(H.a([new T.av(C.aA,n,a9),new T.av(C.A_,m,a9),new T.av(C.zR,l,a9),k,j,h,g,f,e,L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,b,a9,a9,c,a8,a9,13,a0*1.1,0,a/1.1,a9,a9,O.Cp(a1,O.fE(a9,new F.a3t(),a2,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),d)],s),C.aj,C.N),a9),5,new V.an(5,30,5,30))
+a2=Math.floor(b2.fr*1.1)-Math.floor(b2.go/1.1)===0?1/0:Math.ceil((Math.floor(b2.fr*1.1)-Math.floor(b2.go/1.1))/10)
+n=V.ff(new T.av(C.A1,T.da(H.a([new T.av(C.aA,n,a9),new T.av(C.A_,m,a9),new T.av(C.zR,l,a9),k,j,h,g,f,e,L.n1(new T.av(C.jY,V.Ub(Q.ul(a9,a9,a9,b,a9,a9,c,a8,a9,13,a0,0,a,a9,a9,O.Cp(a1,O.fE(a9,new F.a3t(),a2,20,15,a9,!0,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9))),a9,!0,a9)),P.ct(0,2,0)),a9),d)],s),C.aj,C.N),a9),5,new V.an(5,30,5,30))
 m=L.ao("Country Data: "+H.b(b2.e),a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,C.ts,a9,a9,a9,a9,a9,a9,a9,a9,25,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)
 l=L.ao("for 5 Days",a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,b2.Q?C.y:C.u,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)
 k=H.a([new S.lH(L.ao("Date",a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,18,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)),new S.lH(L.ao("Conf.",a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,C.dA,a9,a9,a9,a9,a9,a9,a9,a9,18,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)),new S.lH(L.ao("Recv.",a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,C.aZ,a9,a9,a9,a9,a9,a9,a9,a9,18,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9)),new S.lH(L.ao("Dead",a9,a9,a9,B.Y(a9,a9,a9,A.aA(a9,a9,C.cu,a9,a9,a9,a9,a9,a9,a9,a9,18,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9)),a9))],t.ma)
