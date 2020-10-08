@@ -15,7 +15,7 @@ const RESOURCES = {
 "assets/assets/Wash.png": "b97e95761e6c5dd643b4e5fbdd0384db",
 "assets/FontManifest.json": "e3637cec141ff037b4151edf1c0411cb",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "6d72927ec0cdf17447a2ad88ebb205b6",
+"assets/NOTICES": "754970663f2a938d6e55c614c117afa1",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/packages/fluttericon/lib/fonts/Brandico.ttf": "791921e9b25210e2551b6eda3f86c733",
 "assets/packages/fluttericon/lib/fonts/Elusive.ttf": "23f24df0388819e94db2b3c19841841c",
@@ -39,9 +39,9 @@ const RESOURCES = {
 "icons/Icon-192.png": "e7de83d57e25a501f2ee61490667348b",
 "icons/Icon-512.png": "7d0dc2f35b0f26937cfe671b54d9d310",
 "img/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
-"index.html": "68d7f4bf8e497323f698a924e52c5200",
-"/": "68d7f4bf8e497323f698a924e52c5200",
-"main.dart.js": "9646ab4fa92152c1b786bc7fede6fa49",
+"index.html": "2d43208398785d92e5bf82577e51b761",
+"/": "2d43208398785d92e5bf82577e51b761",
+"main.dart.js": "cb37495235c8d9ed9fe9b1534eb58e32",
 "manifest.json": "d9e418a30d1b069572d5ad81b156c92f",
 "styles.css": "25fded732448e22649eb956c91a916ff"
 };
