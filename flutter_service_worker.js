@@ -3,8 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "404.html": "0a27a4163254fc8fce870c8cc3a3f94f",
-"assets/AssetManifest.json": "dab9b3b95c17a8de81877d1764f2ffe1",
+  "assets/AssetManifest.json": "48f3c8ed67e27506f1c104f01a9cd68f",
 "assets/assets/Contact.png": "291acdc8f8fbc0361c94eed86a6c3cfc",
 "assets/assets/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
 "assets/assets/Cover.png": "50dd8cce40b483873f138300101c7f45",
@@ -14,9 +13,9 @@ const RESOURCES = {
 "assets/assets/Touch.png": "047cb461ab0d16a7790a55d33cf99ac6",
 "assets/assets/Wash.png": "b97e95761e6c5dd643b4e5fbdd0384db",
 "assets/FontManifest.json": "e3637cec141ff037b4151edf1c0411cb",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "754970663f2a938d6e55c614c117afa1",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/NOTICES": "320ea2de4141cc00b6f20751cbb9bde2",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/fluttericon/lib/fonts/Brandico.ttf": "791921e9b25210e2551b6eda3f86c733",
 "assets/packages/fluttericon/lib/fonts/Elusive.ttf": "23f24df0388819e94db2b3c19841841c",
 "assets/packages/fluttericon/lib/fonts/Entypo.ttf": "58edfaf27b1032ea4778b69297c02b5a",
@@ -39,11 +38,12 @@ const RESOURCES = {
 "icons/Icon-192.png": "e7de83d57e25a501f2ee61490667348b",
 "icons/Icon-512.png": "7d0dc2f35b0f26937cfe671b54d9d310",
 "img/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
-"index.html": "5d89690f8464f40d746b799a47303a84",
-"/": "5d89690f8464f40d746b799a47303a84",
-"main.dart.js": "5bc3c423c63583b74ab5f7bce4a27348",
+"index.html": "474cd950aa641eeebcb0b26978c839fc",
+"/": "474cd950aa641eeebcb0b26978c839fc",
+"main.dart.js": "71371e8e8279ff1c70a9a80edd4905b2",
 "manifest.json": "d9e418a30d1b069572d5ad81b156c92f",
-"styles.css": "25fded732448e22649eb956c91a916ff"
+"styles.css": "25fded732448e22649eb956c91a916ff",
+"version.json": "2f85936d0094a730f7a44baee3864e8e"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -57,10 +57,11 @@ const CORE = [
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -125,6 +126,9 @@ self.addEventListener("activate", function(event) {
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
+  if (event.request.method !== 'GET') {
+    return;
+  }
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
@@ -134,9 +138,10 @@ self.addEventListener("fetch", (event) => {
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
-  // If the URL is not the RESOURCE list, skip the cache.
+  // If the URL is not the RESOURCE list then return to signal that the
+  // browser should take over.
   if (!RESOURCES[key]) {
-    return event.respondWith(fetch(event.request));
+    return;
   }
   // If the URL is the index.html, perform an online-first request.
   if (key == '/') {
@@ -160,10 +165,12 @@ self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
   if (event.data === 'skipWaiting') {
-    return self.skipWaiting();
+    self.skipWaiting();
+    return;
   }
-  if (event.message === 'downloadOffline') {
+  if (event.data === 'downloadOffline') {
     downloadOffline();
+    return;
   }
 });
 
@@ -180,7 +187,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
