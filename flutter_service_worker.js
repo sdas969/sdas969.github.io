@@ -2,25 +2,34 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "assets/AssetManifest.json": "48f3c8ed67e27506f1c104f01a9cd68f",
-"assets/assets/Contact.png": "291acdc8f8fbc0361c94eed86a6c3cfc",
-"assets/assets/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
-"assets/assets/Cover.png": "50dd8cce40b483873f138300101c7f45",
-"assets/assets/Disinfect.png": "6257f47db2e89ff19738fa94773dda5d",
-"assets/assets/Mask.png": "431cdb9264b8df48c96b4099af7ecb1b",
-"assets/assets/Prevention.png": "4971b0123d6291088abbf1198a29e59f",
-"assets/assets/Touch.png": "047cb461ab0d16a7790a55d33cf99ac6",
-"assets/assets/Wash.png": "b97e95761e6c5dd643b4e5fbdd0384db",
-"assets/FontManifest.json": "e3637cec141ff037b4151edf1c0411cb",
-"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "38784739247faad47cf71db5aaa0e3e4",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+
+const RESOURCES = {"assets/AssetManifest.bin": "cb10f8130c42cd66fdfe21733ee6fb58",
+"assets/AssetManifest.json": "22542f833fc79bd1a77fda86c7b92133",
+"assets/assets/corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
+"assets/assets/lottie/corona.json": "582483176fea76723b2d9bc515603fbb",
+"assets/assets/lottie/prevention.json": "2ef9baccc486e3fd118bade29fa3790e",
+"assets/assets/prevention.png": "4971b0123d6291088abbf1198a29e59f",
+"assets/assets/preventions/disinfect.png": "b5482a0c3e6d7b647f559739189605e8",
+"assets/assets/preventions/handwash.png": "404918b61bb8716fd7678b26585d233c",
+"assets/assets/preventions/home.png": "1968048f8fffccdfed48daf29f88d9dc",
+"assets/assets/preventions/mask.png": "dcc0c3b6c9faa5e6e5a8d973760e7b84",
+"assets/assets/preventions/social_distancing.png": "0a706b900ff57bc3abb2981cb196b87c",
+"assets/assets/preventions/vaccination.png": "eb4a62f91cdabd042ae36abb087b05a9",
+"assets/assets/symptoms/cough.png": "4670226334f860d1b4bfd20c1e8e8fe6",
+"assets/assets/symptoms/fatigue.png": "9a0eeccc6b33afefce99b0df55615b8a",
+"assets/assets/symptoms/fever.png": "60b9cf5d89c05447067ba934e0272540",
+"assets/assets/symptoms/headache.png": "d2ab52ec62580fa604337a3b04f33854",
+"assets/assets/symptoms/smelling.png": "37fbbf4674af8154b3777c378c08250e",
+"assets/assets/symptoms/vomiting.png": "67d06e24caa0675a0950549cb9340873",
+"assets/FontManifest.json": "a2591277a1ad20f1153b767876b16115",
+"assets/fonts/MaterialIcons-Regular.otf": "d8b5683f26bffd017ccdf9c0b7cf514e",
+"assets/NOTICES": "ef3735846f95e66503859785f572fe4a",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "57d849d738900cfd590e9adc7e208250",
 "assets/packages/fluttericon/lib/fonts/Brandico.ttf": "791921e9b25210e2551b6eda3f86c733",
 "assets/packages/fluttericon/lib/fonts/Elusive.ttf": "23f24df0388819e94db2b3c19841841c",
 "assets/packages/fluttericon/lib/fonts/Entypo.ttf": "58edfaf27b1032ea4778b69297c02b5a",
-"assets/packages/fluttericon/lib/fonts/FontAwesome.ttf": "799bb4e5c577847874f20bd0e9b38a9d",
-"assets/packages/fluttericon/lib/fonts/FontAwesome5.ttf": "221b27a41202ddd33990e299939e4504",
+"assets/packages/fluttericon/lib/fonts/FontAwesome.ttf": "f4129dc4687db3424426f77209eeda56",
+"assets/packages/fluttericon/lib/fonts/FontAwesome5.ttf": "13b08b625158861df325f1dcf21164b4",
 "assets/packages/fluttericon/lib/fonts/Fontelico.ttf": "3a1e1cecf0a3eae6be5cba3677379ba2",
 "assets/packages/fluttericon/lib/fonts/Iconic.ttf": "34e12214307f5f7cf7bc62086fbf55a3",
 "assets/packages/fluttericon/lib/fonts/LineariconsFree.ttf": "276b1d61e45eb9b2dde9482545d9e3ac",
@@ -30,31 +39,44 @@ const RESOURCES = {
 "assets/packages/fluttericon/lib/fonts/MfgLabs.ttf": "09daa533ea11600a98e3148b7531afe3",
 "assets/packages/fluttericon/lib/fonts/ModernPictograms.ttf": "5046c536516be5b91c15eb7795e0352d",
 "assets/packages/fluttericon/lib/fonts/Octicons.ttf": "7242d2fe9e36eb4193d2bc7e521779bf",
-"assets/packages/fluttericon/lib/fonts/RpgAwesome.ttf": "99232001effca5cf2b5aa92cc3f3e892",
+"assets/packages/fluttericon/lib/fonts/RpgAwesome.ttf": "3fb8d0aa42860e8db819f5d3c65834c5",
 "assets/packages/fluttericon/lib/fonts/Typicons.ttf": "3386cae1128e52caf268508d477fb660",
 "assets/packages/fluttericon/lib/fonts/WebSymbols.ttf": "4fd66aa74cdc6e5eaff0ec916ac269c6",
 "assets/packages/fluttericon/lib/fonts/Zocial.ttf": "c29d6e34d8f703a745c6f18d94ce316d",
-"favicon.png": "a5ac436ee1e4ed54b860dda36b33c379",
-"icons/Icon-192.png": "e7de83d57e25a501f2ee61490667348b",
-"icons/Icon-512.png": "7d0dc2f35b0f26937cfe671b54d9d310",
-"img/Corona.png": "a932f9ce1e1d5f2803dbfc2e41950f1d",
-"index.html": "2b552a118bc6976e0d59b166edf1d6f1",
-"/": "2b552a118bc6976e0d59b166edf1d6f1",
-"main.dart.js": "2c7622fe25741db9c2141d7b191b0dcb",
-"manifest.json": "d9e418a30d1b069572d5ad81b156c92f",
-"styles.css": "25fded732448e22649eb956c91a916ff",
-"version.json": "2f85936d0094a730f7a44baee3864e8e"
-};
-
+"assets/packages/flutter_octicons/lib/fonts/octicons12.ttf": "870d86fb7052ff0f20c929d3c2ddf721",
+"assets/packages/flutter_octicons/lib/fonts/octicons16.ttf": "d3277be0d461441a1d8ecbf0d3fd774c",
+"assets/packages/flutter_octicons/lib/fonts/octicons24.ttf": "ccce0e4beed2240ca8ad06ac402faf1f",
+"assets/packages/flutter_octicons/lib/fonts/octicons48.ttf": "899653286225aa8e1e6002fac6d4ab31",
+"assets/packages/flutter_octicons/lib/fonts/octicons96.ttf": "a19b2e77a1a509bc7a7fa528df270166",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "5ac99533bd9dc46227434b4853c3e532",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "093d2cde7075fcffb24ab215668d0da2",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "1e17b1ec3152f29bf783bd42db8b6023",
+"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
+"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
+"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
+"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
+"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
+"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
+"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a",
+"favicon.ico": "8535e5a1ba6670f49a8bb0099e46937d",
+"flutter.js": "6b515e434cea20006b3ef1726d2c8894",
+"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"index.html": "917564ef45c0f0d303a22eae9420dbd7",
+"/": "917564ef45c0f0d303a22eae9420dbd7",
+"main.dart.js": "05efb8dd7c811e15e680aa10a75aa5c4",
+"manifest.json": "5161e07b01f1f0a885498a83977d13e7",
+"version.json": "2bc89d9b5ac60f15f6d64a1992f88562"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "/",
-"main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -65,7 +87,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -87,6 +108,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -112,6 +135,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -122,7 +147,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -151,16 +175,17 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -173,7 +198,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -194,7 +218,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
